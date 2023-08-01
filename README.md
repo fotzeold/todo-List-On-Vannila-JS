@@ -3,6 +3,8 @@
 Description:
 This is a simple ToDoList application built using JavaScript, HTML, and CSS. It allows users to add, edit, and delete tasks, as well as mark them as completed. The ToDoList is designed to help users stay organized and keep track of their tasks.
 
+![prog2](https://github.com/fotzeold/todo-List-On-Vannila-JS/assets/72940847/3a187bd0-004a-4aa3-9f39-d5f5a625b80f)
+
 Features:
 1. Add Task: Users can add new tasks to the list by typing the task description and pressing the "Add" button.
 
