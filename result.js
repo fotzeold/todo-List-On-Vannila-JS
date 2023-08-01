@@ -39,24 +39,22 @@ infoContainer.addEventListener('click', (event) => {
 });
 
 function saveData() {
-	localStorage.setItem("data", infoContainer.innerHTML);
+	localStorage.setItem("todoList", infoContainer.innerHTML);
 	console.log("str");
 }
 
 function getData() {
-	infoContainer.innerHTML = localStorage.getItem("data");
+	infoContainer.innerHTML = localStorage.getItem("todoList");
 	counter.innerText = document.querySelectorAll('.elem').length;
 }
 getData();
 
-
-infoContainer.addEventListener('mousemove', () => {
-	saveData();
-})
-
 new Sortable(infoContainer, {
 	animation: 350,
 	ghostClass: 'blue-background-class',
+	onSort: function () {
+		saveData();
+	}
 })
 
 
